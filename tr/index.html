@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+		<meta charset="utf-8">
+        <title>Tv Kumandası</title>
+
+        <link href="../assets/css/remote-style.css" rel="stylesheet">
+        <link href="../assets/css/modal.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="../assets/js/kumanda-komutlari.js"></script> 
+        <main>
+
+            
+            <div class="remote">
+            <div class="list topbar d-flex justify-content-between">
+                <div>
+                    TV Kumandası
+                    <br>
+                    <div id="TvAdiAnasayfaDiv"><div class="baglanti-hatasi">TV'YE BAĞLANILAMADI!<br>1) TV'NİN AÇIK OLDUĞUNDAN EMİN OLUN.<br>2) TV'NİN AĞA BAĞLANDIĞINDAN EMİN OLUN.<br>3) TV'NİN YEREL IP ADRESİNİ KONTROL EDİN.</div></div>
+                </div>
+                <a href="https://emrecb.com">
+                    <div class="status-bar d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="18" fill="currentColor" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 192h17.1c22.1 38.3 63.5 64 110.9 64c11 0 21.8-1.4 32-4v4 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V339.2L280 448h56c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-53 0-96-43-96-96V192.5c0-16.1-12-29.8-28-31.8l-7.9-1c-17.5-2.2-30-18.2-27.8-35.7s18.2-30 35.7-27.8l7.9 1c48 6 84.1 46.8 84.1 95.3v85.3c34.4-51.7 93.2-85.8 160-85.8zm160 26.5v0c-10 3.5-20.8 5.5-32 5.5c-28.4 0-54-12.4-71.6-32h0c-3.7-4.1-7-8.5-9.9-13.2C357.3 164 352 146.6 352 128v0V32 12 10.7C352 4.8 356.7 .1 362.6 0h.2c3.3 0 6.4 1.6 8.4 4.2l0 .1L384 21.3l27.2 36.3L416 64h64l4.8-6.4L512 21.3 524.8 4.3l0-.1c2-2.6 5.1-4.2 8.4-4.2h.2C539.3 .1 544 4.8 544 10.7V12 32v96c0 17.3-4.6 33.6-12.6 47.6c-11.3 19.8-29.6 35.2-51.4 42.9zM432 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>
+                        </div>
+                        <div>
+                            <svg width="30" height="23" viewBox="0 0 36.619 19.119" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="currentColor" stroke-width="0" fill="currentColor" style="stroke:currentColor;stroke-width:0;fill:currentColor"><path d="M 8.892 14.744 L 0 14.744 L 0 0.199 L 8.778 0.199 L 8.778 1.761 L 1.761 1.761 L 1.761 6.676 L 8.324 6.676 L 8.324 8.239 L 1.761 8.239 L 1.761 13.182 L 8.892 13.182 L 8.892 14.744 Z M 23.665 4.744 L 21.903 4.744 A 3.979 3.979 0 0 0 21.636 3.907 A 3.377 3.377 0 0 0 21.36 3.409 A 3.768 3.768 0 0 0 20.423 2.44 A 4.072 4.072 0 0 0 19.205 1.847 A 4.85 4.85 0 0 0 17.812 1.648 A 4.419 4.419 0 0 0 15.423 2.315 A 4.34 4.34 0 0 0 14.114 3.602 A 5.591 5.591 0 0 0 13.725 4.283 A 5.922 5.922 0 0 0 13.264 5.68 Q 13.097 6.498 13.097 7.472 Q 13.097 9.361 13.725 10.661 A 5.23 5.23 0 0 0 14.437 11.771 A 4.21 4.21 0 0 0 15.423 12.628 Q 16.491 13.296 17.813 13.296 A 4.85 4.85 0 0 0 19.205 13.097 Q 19.872 12.898 20.423 12.504 Q 20.973 12.109 21.36 11.531 A 3.608 3.608 0 0 0 21.824 10.52 A 4.3 4.3 0 0 0 21.903 10.199 L 23.665 10.199 A 6.19 6.19 0 0 1 23.264 11.56 A 5.382 5.382 0 0 1 22.94 12.195 A 5.406 5.406 0 0 1 21.634 13.69 A 5.69 5.69 0 0 1 19.883 14.624 A 6.466 6.466 0 0 1 18.103 14.938 A 7.409 7.409 0 0 1 17.812 14.943 A 6.488 6.488 0 0 1 15.773 14.631 A 5.78 5.78 0 0 1 14.503 14.034 A 6.085 6.085 0 0 1 12.498 11.954 A 7.448 7.448 0 0 1 12.223 11.449 A 7.74 7.74 0 0 1 11.551 9.366 A 10.731 10.731 0 0 1 11.392 7.472 A 10.731 10.731 0 0 1 11.551 5.578 A 7.74 7.74 0 0 1 12.223 3.494 A 6.67 6.67 0 0 1 13.39 1.813 A 5.881 5.881 0 0 1 14.503 0.909 A 5.979 5.979 0 0 1 17.354 0.014 A 7.318 7.318 0 0 1 17.812 0 A 6.741 6.741 0 0 1 19.437 0.191 A 6.112 6.112 0 0 1 19.883 0.32 A 5.69 5.69 0 0 1 21.634 1.254 A 5.425 5.425 0 0 1 22.94 2.745 Q 23.466 3.622 23.665 4.744 Z M 31.761 14.744 L 26.506 14.744 L 26.506 0.199 L 31.591 0.199 Q 33.111 0.199 34.098 0.721 A 3.834 3.834 0 0 1 34.982 1.354 A 3.237 3.237 0 0 1 35.568 2.12 Q 36.051 2.997 36.051 4.063 Q 36.051 4.815 35.839 5.357 A 2.3 2.3 0 0 1 35.721 5.611 Q 35.391 6.222 34.854 6.577 Q 34.318 6.932 33.693 7.102 L 33.693 7.244 Q 34.361 7.287 35.036 7.713 A 3.193 3.193 0 0 1 35.875 8.495 A 4.066 4.066 0 0 1 36.165 8.935 A 3.315 3.315 0 0 1 36.526 9.911 Q 36.612 10.324 36.619 10.8 A 5.731 5.731 0 0 1 36.619 10.881 A 4.133 4.133 0 0 1 36.435 12.132 A 3.689 3.689 0 0 1 36.122 12.848 A 3.153 3.153 0 0 1 35.194 13.858 A 4.261 4.261 0 0 1 34.553 14.233 Q 33.48 14.744 31.761 14.744 Z M 28.267 8.125 L 28.267 13.182 L 31.761 13.182 A 7.012 7.012 0 0 0 32.608 13.135 Q 33.517 13.024 34.04 12.652 A 1.769 1.769 0 0 0 34.215 12.511 A 2.274 2.274 0 0 0 34.755 11.78 A 2.147 2.147 0 0 0 34.943 10.881 A 2.613 2.613 0 0 0 34.567 9.514 A 2.708 2.708 0 0 0 33.663 8.604 A 3.264 3.264 0 0 0 33.494 8.505 Q 32.798 8.125 31.847 8.125 L 28.267 8.125 Z M 28.267 1.761 L 28.267 6.591 L 31.534 6.591 A 3.49 3.49 0 0 0 32.419 6.482 A 2.99 2.99 0 0 0 32.972 6.278 Q 33.615 5.966 33.995 5.398 A 2.251 2.251 0 0 0 34.358 4.377 A 2.864 2.864 0 0 0 34.375 4.063 A 2.265 2.265 0 0 0 34.117 2.983 A 2.329 2.329 0 0 0 33.707 2.433 A 2.011 2.011 0 0 0 32.974 1.974 Q 32.406 1.761 31.591 1.761 L 28.267 1.761 Z M 16.79 16.193 L 17.074 14.801 L 18.466 14.801 L 18.352 15.369 Q 18.906 15.455 19.368 15.835 A 1.176 1.176 0 0 1 19.735 16.385 Q 19.8 16.58 19.82 16.819 A 2.667 2.667 0 0 1 19.83 17.046 A 1.77 1.77 0 0 1 19.25 18.391 A 2.314 2.314 0 0 1 19.073 18.541 A 2.454 2.454 0 0 1 18.341 18.915 Q 18.001 19.027 17.586 19.077 A 6.127 6.127 0 0 1 16.847 19.119 L 16.79 18.011 A 3.442 3.442 0 0 0 17.254 17.982 Q 17.614 17.933 17.887 17.802 Q 18.324 17.592 18.324 17.102 A 1.022 1.022 0 0 0 18.295 16.851 A 0.608 0.608 0 0 0 17.962 16.435 A 1.557 1.557 0 0 0 17.723 16.344 Q 17.457 16.265 17.06 16.219 A 7.683 7.683 0 0 0 16.79 16.193 Z" vector-effect="non-scaling-stroke"/></g></svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn btn-shadow btn-small no-mode" href="javascript:sendKeyEvent('Mute')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM425 167l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+                </a>
+                <a class="btn btn-shadow btn-small no-mode" href="javascript:sendKeyEvent('Standby')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FF0000" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"/></svg>
+                </a>
+                <a class="btn btn-shadow btn-small no-mode" href="javascript:sendKeyEvent('Source')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                </a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn" href="javascript:sendKeyEvent('Stop')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('Pause')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('Record')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                </a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn" href="javascript:sendKeyEvent('Rewind')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('PlayPause')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('FastForward')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z"/></svg>
+                </a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn" href="javascript:sendKeyEvent('Find')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('Options')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M64 144a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM64 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48-208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('Adjust')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"/></svg>
+                </a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <div class="side-btns">
+                <div class="d-flex inner justify-content-between align-items-center">
+                    <a class="btn" href="javascript:sendKeyEvent('VolumeUp')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                    </a>
+                    <!--<div>Vol</div>-->
+                    <div id="mevcutSesDiv">SES</div>
+                    <a class="btn" href="javascript:sendKeyEvent('VolumeDown')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>
+                    </a>
+                </div>
+                </div>
+                <div class="center-btns">
+                <a class="btn btn-up" href="javascript:sendKeyEvent('CursorUp')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>
+                </a>
+                <a class="btn btn-right" href="javascript:sendKeyEvent('CursorRight')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                </a>
+                <a class="btn btn-down" href="javascript:sendKeyEvent('CursorDown')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+                </a>
+                <a class="btn btn-left" href="javascript:sendKeyEvent('CursorLeft')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
+                </a>
+                </div>
+                <div class="side-btns">
+                <div class="d-flex inner justify-content-between align-items-center">
+                    <a class="btn" href="javascript:sendKeyEvent('ChannelStepUp')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>
+                    </a>
+                    <div>KANAL</div>
+                    <a class="btn" href="javascript:sendKeyEvent('ChannelStepDown')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn" href="javascript:sendKeyEvent('Back')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                </a>
+                <a class="btn text-button" href="javascript:sendKeyEvent('Confirm')">
+                    OK
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('Home')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                </a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit1')">1</a>
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit2')">2</a>
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit3')">3</a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit4')">4</a>
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit5')">5</a>
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit6')">6</a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit7')">7</a>
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit8')">8</a>
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit9')">9</a>
+            </div>
+            <div class="list d-flex justify-content-between">
+                <a class="btn text-button" href="javascript:sendKeyEvent('Subtitle')">SUBTITLE</a>
+                <a class="btn number-button" href="javascript:sendKeyEvent('Digit0')">0</a>
+                <a class="btn text-button" href="javascript:sendKeyEvent('Teletext')">TEXT</a>
+            </div>
+
+            
+            
+            <div class="list d-flex justify-content-between">
+                <a class="btn" href="javascript:sendKeyEvent('RedColour')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ae4047" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('GreenColour')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#268779" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('YellowColour')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#aca747" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"/></svg>
+                </a>
+                <a class="btn" href="javascript:sendKeyEvent('BlueColour')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#40659a" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"/></svg>
+                </a>
+            </div>
+
+            
+            <div class="list d-flex justify-content-between">
+                    <select class="select-kaynak-secimi" name="mediumSelect" id="tv_sources"></select>
+                    <!--<select class="select-kaynak-secimi" name="mediumSelect" id="tv_fav_list"></select>-->
+                    <!--<select class="select-kaynak-secimi" name="mediumSelect" id="tv_kanallar"></select>-->
+            </div>
+
+
+
+            <div class="bottom-menu d-flex">
+                    <a class="btn center-btn" id="changeMode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                        </svg>
+                    </a>
+                <div>
+                    <a class="btn tranparent-btn" href="javascript:verileriGuncelle()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/></svg>
+                    </a>
+                </div>
+                <div>
+                    <a class="btn tranparent-btn" href="../index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                            <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                            <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a class="btn tranparent-btn"  href="../lite/tr/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-aspect-ratio" viewBox="0 0 16 16">
+                            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
+                            <path d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a class="btn tranparent-btn" id="modalSettingsButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16"><!--!Bootsrap Icon--><path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/><path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            </div>
+        </main>
+
+        
+
+
+
+
+        <!-- Ayarlar Sayfası Modal -->
+        <div id="modalSettings" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="modal-close-button">&times;</span>
+                <div class="modal-title-text">
+                    Ayarlar
+                </div>
+                <div class="modal-title-content">
+                    <br>
+                    <label for="ipaddress_txt">IP Adresi:</label>
+                    <br>
+                    <br>
+                    <input class="modal-ip-input" id="ipaddress_txt" name="ipaddress_txt" type="text">
+                    <br><br>
+                    <a class="btn-ip-kayit" href="javascript:saveSettings()" >Bağlan</a>
+                    <a class="btn-ip-sil" id="btn_clear" href="javascript:clearSettings()" >Temizle</a>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    Sistem Bilgileri:
+                    <br>
+                    <br>
+                        <table border="1">
+                        <tbody>
+                        <tr>
+                        <td>TV Aktif Kaynak Bilgisi:</td>
+                        <td><div id="TvAktifKaynakBilgisiDiv">Bağlantı yok!</div></td>
+                        </tr>
+                        <tr>
+                        <td>Menü Dili:</td>
+                        <td><div id="TvMenuDiliDiv">Bağlantı yok!</div></td>
+                        </tr>
+                        <tr>
+                        <td>TV Adı:</td>
+                        <td><div id="TvAdiDiv">Bağlantı yok!</div></td>
+                        </tr>
+                        <tr>
+                        <td>TV Ülke Ayarı:</td>
+                        <td><div id="TvUlkeAyariDiv">Bağlantı yok!</div></td>
+                        </tr>
+                        <tr>
+                        <td>TV Seri Numarası:</td>
+                        <td><div id="TvSeriNumarasiDiv">Bağlantı yok!</div></td>
+                        </tr>
+                        <tr>
+                        <td>TV Yazılım Versiyonu:</td>
+                        <td><div id="TvYazilimVersiyonuDiv">Bağlantı yok!</div></td>
+                        </tr>
+                        <tr>
+                        <td>TV Modeli:</td>
+                        <td><div id="TvModeliDiv">Bağlantı yok!</div></td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="../assets/js/jquery-3.7.1.min.js"></script>
+        <!--<script src="../assets/js/jquery-1.7.min.js"></script>-->
+        <script src="../assets/js/modalsettings.js"></script> 
+        <script src="../assets/js/dark-light-mode.js"></script> 
+        
+        
+    </body>
+</html>
